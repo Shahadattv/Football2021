@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f1ff;
+    margin: 0px;
+}
+
+article img:hover {
+    transform: rotateZ(1deg)
+}
+
+.header {
+    background-color: turquoise;
+    display: flex;
+}
+
+#first {
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.half-width {
+    width: 50%;
+    height: auto;
+}
+
+.button {
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    background-color: tomato;
+}
+
+.half-width img {
+    height: 80%;
+    width: 80%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section1 {
+    margin-top: 20px;
+    /* width: 500px; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 30px;
+}
+
+article {
+    height: 300px;
+    width: 200px;
+    background-color: white;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+article p {
+    font-size: small;
+}
+
+.section1 img {
+    height: 150px;
+    width: 100%;
+}
+
+.section2 {
+    background-color: white;
+    margin-top: 20px;
+    height: 300px;
+    width: 700px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
+.Highlights {
+    padding: 20px;
+}
+
+.section2 img {
+    height: 100%;
+    width: 100%;
+}
+
+.footer {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.footer img {
+    padding-top: 20px;
+    height: 50px;
+}
+
+.footer p {
+    font-size: small;
+}
+
+
+/*------------------------- MEDIA QUERY---------------------------------- */
+
+@media only screen and ( max-width:688px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header img {
+        height: 120%;
+        width: 120%;
+        padding-top: 40px;
+        margin-top: 30px;
+    }
+    .section1 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .section2 {
+        grid-template-columns: repeat(1, 1fr);
+        height: 50%;
+        width: 50%;
+    }
+}
