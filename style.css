@@ -52,7 +52,6 @@ main {
 }
 
 article {
-    height: auto;
     width: 200px;
     background-color: white;
     margin-top: 10px;
@@ -79,7 +78,11 @@ article p {
 }
 
 .Highlights {
-    padding: 20px;
+    padding-left: 30px;
+}
+
+.Highlights p {
+    font-size: small;
 }
 
 .section2 img {
